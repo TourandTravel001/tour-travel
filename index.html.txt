@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tour & Travel</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Tour & Travel</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#destinations">Destinations</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <h2>Explore The World With Us</h2>
+    <p>Discover new places, cultures, and adventures at unbeatable prices.</p>
+    <button onclick="showMessage()">Plan Your Trip</button>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="service-cards">
+      <div class="card">
+        <h3>Holiday Packages</h3>
+        <p>Customized domestic and international holiday plans.</p>
+      </div>
+      <div class="card">
+        <h3>Flight & Hotel Booking</h3>
+        <p>Best deals on flights, hotels, and resorts worldwide.</p>
+      </div>
+      <div class="card">
+        <h3>Tour Guide</h3>
+        <p>Experienced guides to make your journey unforgettable.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="destinations">
+    <h2>Popular Destinations</h2>
+    <div class="destinations">
+      <div class="place">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Beach" />
+        <h3>Maldives</h3>
+      </div>
+      <div class="place">
+        <img src="https://images.unsplash.com/photo-1505761671935-60b3a7427bad" alt="Mountains" />
+        <h3>Switzerland</h3>
+      </div>
+      <div class="place">
+        <img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1" alt="Desert" />
+        <h3>Dubai</h3>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>You can add your contact details here later.</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Tour & Travel | All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
