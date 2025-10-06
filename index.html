@@ -1,74 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tour & Travel</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wanderlust Tours</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
+  <!-- Header -->
   <header>
-    <h1>Tour & Travel</h1>
+    <h1>Wanderlust Tours</h1>
     <nav>
-      <a href="#home">Home</a>
+      <a href="#about">About</a>
       <a href="#services">Services</a>
       <a href="#destinations">Destinations</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
-  <section id="home" class="hero">
-    <h2>Explore The World With Us</h2>
-    <p>Discover new places, cultures, and adventures at unbeatable prices.</p>
-    <button onclick="showMessage()">Plan Your Trip</button>
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Explore the World With Us</h2>
+    <p>Your Adventure Starts Here</p>
+    <button onclick="window.location.href='#contact'">Book Now</button>
   </section>
 
+  <!-- About -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Wanderlust Tours is your trusted travel partner, offering unforgettable experiences and guided tours worldwide.</p>
+  </section>
+
+  <!-- Services -->
   <section id="services">
     <h2>Our Services</h2>
     <div class="service-cards">
-      <div class="card">
-        <h3>Holiday Packages</h3>
-        <p>Customized domestic and international holiday plans.</p>
-      </div>
-      <div class="card">
-        <h3>Flight & Hotel Booking</h3>
-        <p>Best deals on flights, hotels, and resorts worldwide.</p>
-      </div>
-      <div class="card">
-        <h3>Tour Guide</h3>
-        <p>Experienced guides to make your journey unforgettable.</p>
-      </div>
+      <div class="card">Flight Bookings</div>
+      <div class="card">Hotel Reservations</div>
+      <div class="card">Guided Tours</div>
+      <div class="card">Custom Travel Packages</div>
     </div>
   </section>
 
+  <!-- Destinations -->
   <section id="destinations">
-    <h2>Popular Destinations</h2>
+    <h2>Top Destinations</h2>
     <div class="destinations">
       <div class="place">
-        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Beach" />
-        <h3>Maldives</h3>
+        <img src="https://via.placeholder.com/270x180" alt="Paris">
+        <h3>Paris</h3>
       </div>
       <div class="place">
-        <img src="https://images.unsplash.com/photo-1505761671935-60b3a7427bad" alt="Mountains" />
-        <h3>Switzerland</h3>
+        <img src="https://via.placeholder.com/270x180" alt="Bali">
+        <h3>Bali</h3>
       </div>
       <div class="place">
-        <img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1" alt="Desert" />
-        <h3>Dubai</h3>
+        <img src="https://via.placeholder.com/270x180" alt="New York">
+        <h3>New York</h3>
+      </div>
+      <div class="place">
+        <img src="https://via.placeholder.com/270x180" alt="Tokyo">
+        <h3>Tokyo</h3>
       </div>
     </div>
   </section>
 
+  <!-- Contact -->
   <section id="contact">
     <h2>Contact Us</h2>
-    <p>You can add your contact details here later.</p>
+    <p>Email: info@wanderlusttours.com</p>
+    <p>Phone: +91 12345 67890</p>
+    <button onclick="window.location.href='mailto:info@wanderlusttours.com'">Email Us</button>
   </section>
 
+  <!-- Footer -->
   <footer>
-    <p>© 2025 Tour & Travel | All Rights Reserved</p>
+    &copy; 2025 Wanderlust Tours. All Rights Reserved.
   </footer>
 
-  <script src="script.js"></script>
 </body>
 </html>
-
