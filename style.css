@@ -11,7 +11,7 @@ body {
 a { text-decoration: none; color: inherit; }
 
 header {
-  background: linear-gradient(90deg, #00b4d8, #48cae4);
+  background: linear-gradient(90deg, #0077b6, #48cae4);
   color: white;
   padding: 1rem 2rem;
   display: flex;
@@ -24,53 +24,54 @@ header {
 }
 
 header h1 { font-size: 2rem; letter-spacing: 1px; margin:0; }
-
 nav a { margin: 0 15px; font-weight: 500; transition: 0.3s; }
 nav a:hover { color: #ffd166; transform: scale(1.1); }
 
 .hero {
-  background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
-  color: white;
-  text-align: center;
-  padding: 120px 20px;
   position: relative;
+  height: 100vh;
+  overflow: hidden;
+  text-align: center;
+  color: white;
 }
 
+.hero-video { width: 100%; height: 100%; object-fit: cover; }
+.hero .overlay {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: rgba(0,0,0,0.4);
+  display: flex; flex-direction: column;
+  justify-content: center; align-items: center;
+}
 .hero h2 { font-size: 3rem; margin-bottom: 15px; text-shadow: 2px 2px 8px rgba(0,0,0,0.4); }
 .hero p { font-size: 1.2rem; margin-bottom: 25px; text-shadow: 1px 1px 5px rgba(0,0,0,0.4); }
-.hero button {
-  background-color: #ff7b00; color:white; border:none;
-  padding:12px 30px; border-radius:30px; font-size:1.1rem;
-  font-weight:600; cursor:pointer; transition:0.3s;
+.cta-button {
+  background-color: #ff7b00; color:white; padding:12px 30px;
+  border:none; border-radius:30px; font-size:1.2rem; font-weight:600;
+  transition:0.3s;
 }
-.hero button:hover { background-color: #e36414; transform: scale(1.05); }
+.cta-button:hover { background-color:#e36414; transform: scale(1.05); }
 
 section { padding: 60px 20px; text-align: center; }
 
-.service-cards {
-  display: flex; flex-wrap: wrap; justify-content: center; gap: 25px;
-}
-.card {
-  background: linear-gradient(135deg,#ffffff,#f1f6fc);
-  border-radius: 15px; box-shadow:0 10px 20px rgba(0,0,0,0.08);
-  padding:25px; width:270px; transition: transform 0.3s, box-shadow 0.3s;
-}
-.card:hover { transform: translateY(-10px); box-shadow:0 15px 25px rgba(0,0,0,0.15); }
+.service-cards, .destinations { display:flex; flex-wrap:wrap; justify-content:center; gap:25px; }
 
-.destinations {
-  display: flex; flex-wrap: wrap; justify-content: center; gap: 25px;
+.card, .place {
+  background: linear-gradient(135deg,#ffffff,#f1f6fc);
+  border-radius:15px;
+  box-shadow:0 10px 20px rgba(0,0,0,0.08);
+  padding:25px; width:270px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align:center;
 }
-.place {
-  background:white; border-radius:15px; overflow:hidden; width:270px;
-  transition: transform 0.3s;
-}
-.place img { width:100%; height:180px; object-fit:cover; transition: transform 0.3s; }
+.card:hover, .place:hover { transform: translateY(-10px); box-shadow:0 15px 25px rgba(0,0,0,0.15); }
+
+.place img { width:100%; height:180px; object-fit:cover; border-radius:10px; transition: transform 0.3s; }
 .place:hover img { transform: scale(1.1); }
-.place:hover { transform: translateY(-10px); }
 .place h3 { margin:10px 0; }
 
 footer {
-  background: linear-gradient(90deg,#00b4d8,#48cae4);
+  background: linear-gradient(90deg,#0077b6,#48cae4);
   color:white; text-align:center; padding:20px 0; font-size:0.95rem;
   margin-top:40px;
 }
