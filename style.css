@@ -40,7 +40,7 @@ nav a:hover {
 
 .hero {
   background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') center/cover no-repeat;
-  height: 85vh;
+  height: 70vh;
   position: relative;
   display: flex;
   align-items: center;
@@ -56,7 +56,7 @@ nav a:hover {
 }
 
 .hero h1 {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   margin-bottom: 10px;
 }
 
@@ -98,23 +98,24 @@ nav a:hover {
   border-radius: 15px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
   overflow: hidden;
-  width: 300px;
+  width: 290px;
   transition: transform 0.3s ease;
 }
 
 .card:hover {
-  transform: translateY(-10px);
+  transform: translateY(-8px);
 }
 
 .card img {
   width: 100%;
-  height: 180px;
+  height: 150px;
   object-fit: cover;
 }
 
 .card h3 {
   margin: 15px 0 10px;
   color: #023e8a;
+  font-size: 1.1rem;
 }
 
 .card p {
@@ -125,7 +126,7 @@ nav a:hover {
 .price {
   font-weight: bold;
   color: #ff7b00;
-  font-size: 1.1rem;
+  font-size: 1rem;
   margin: 10px 0;
 }
 
@@ -137,10 +138,62 @@ nav a:hover {
   padding: 10px 20px;
   margin-bottom: 20px;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 .book:hover {
   background: #0077b6;
+}
+
+/* Booking form */
+.booking {
+  background: #f0faff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.booking h2 {
+  color: #0077b6;
+  margin-bottom: 20px;
+}
+
+form {
+  display: inline-block;
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 300px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+form button {
+  margin-top: 15px;
+  background: #ff7b00;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 10px;
+  width: 100%;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #e36414;
 }
 
 .contact {
